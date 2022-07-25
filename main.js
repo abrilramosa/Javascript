@@ -1,29 +1,19 @@
-let name = "Abril";
-let edad = 23;
-let studies = true;
-let car = null;
-let houses = undefined;
-let country = Symbol ('flag of Catalunya');
-let persona = {name, edad, studies, car, houses, country};
 
-console.log(persona);
 
-const infoPersona = function (){
-    console.log (name);
-    console.log (typeof name);
+function infoPerson () {
+    let name = "Abril";
+    let surname = "Ramos";
+    let studies = true;
+    console.log(name, surname, "estudios=",studies);
+};
+const printElement = (item) =>{console.log};
 
-    console.log (edad);
-    console.log (typeof edad);
+var array = [1, 2, 3, 4, 5];
 
-    console.log (car);
-    console.log (typeof car);
-
-    console.log (houses);
-    console.log (typeof houses);
-
-    console.log (country);
-    console.log (typeof country);
-}
-
-infoPersona ();
-console.log(infoPersona());
+const imprimirArrays = function (...array){
+    array.forEach(element => {
+        console.log(element)
+    });
+};
+infoPerson();
+imprimirArrays(1,2,3,4,5);
